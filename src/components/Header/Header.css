@@ -1,0 +1,60 @@
+.wrapper{
+height:100vh;
+overflow-x:hidden;
+overflow-y:auto;
+}
+
+.top-navbar{
+width:91.145vw;
+height:60px;
+margin:0 auto;
+display:flex;
+justify-content: space-between;
+}
+
+.nav-left{
+display: flex;
+gap:34px;
+align-items: center;
+}
+
+.nav-right{
+display: flex;
+align-items: center;
+transition:0.5s;
+}
+
+.sign-google{
+height:33px;
+cursor:pointer;
+}
+
+.nav-links:hover{
+color:blue;
+}
+
+
+
+.nav-links{
+text-decoration: none;
+color:black;
+}
+
+.nav-heading{
+width:100vw;
+height:40px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: radial-gradient(circle, rgb(153, 0, 255) 0%, rgb(70, 19, 150) 100%);
+color:#ffffff;
+font-size:0.875rem;
+font-weight: 500;
+}
+
+/*media queries*/
+@media (max-width:665px) and (min-width:320px){
+.hide{
+display:none;
+}
+}
