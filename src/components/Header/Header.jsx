@@ -4,7 +4,7 @@ import googleLogo from "../../images/google-signup.91be9f22.svg"
 import "./Header.css"
 const Header = () => {
   return (
-      <div className='wrapper'>
+      <>
       <nav className='top-navbar'>
         <div className="nav-left">
                   <a href="#"><img src={logo}></img></a>
@@ -21,7 +21,7 @@ const Header = () => {
       <p>The next Prime batch will be launching soon!🎉</p>
       </div>
           
-      </div>
+      </>
   )
 }
 
