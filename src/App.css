@@ -11,6 +11,13 @@ font-style: normal;
     overflow-y: auto;
 }
 
+.header{
+background-color: #ffffff;
+position: sticky;
+top: 0;
+z-index:1;
+}
+
 .center{
 margin-bottom:12px;
 text-align:center;
@@ -75,6 +82,32 @@ word-spacing: 2px;
 color:#62626A;
 }
 
+.review-student{
+display:flex;
+column-gap:10px;
+}
+
+.review-student p{
+margin-bottom:6px;
+}
+
+.spacing{
+margin-bottom:10px;
+}
+
+.review-student p:nth-child(1){
+font-weight:600;
+}
+
+.review-comment{
+font-size:16px;
+width:100%;
+color:#62626A;
+}
+
+.review-card{
+margin:20px;
+}
 
 @media (min-width:320px) and (max-width:665px){
 .section-head{

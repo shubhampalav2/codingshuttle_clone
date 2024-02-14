@@ -19,7 +19,9 @@ import infoedge from "./images/infoedge.webp";
 import stud9 from "./images/Soham_Samanta.webp";
 import microsoft from "./images/microsoft.webp";
 import Card from './components/Card'; 
+import Hero from "./components/Hero/Hero.jsx"
 import './App.css';
+import ReviewSlider from './components/ReviewSlider.jsx';
 
 function App() {
   const first = {
@@ -124,8 +126,9 @@ function App() {
 
   return ( 
     <div className='wrapper'>
-      <Header />
+      <Header/>
       <div className="main-container">
+        <Hero/>
         <SectionHeader title1={"SUCCESS STORIES"} title2={"Transform Your Life With"} firstp={first} color={{color: "#8F2D56"}} main={"Coding Shuttle"}/>
       <div className="cards">
         {students.map((student,idx) => (
@@ -133,7 +136,9 @@ function App() {
        ))}
       </div>
       <SectionHeader title1={"OUR CURRICULUM"} title2={"Structured Curriculum Vetted By"} firstp={first} color={{ color: "#006FE6" }} main={"Industry Experts"} />
-      <SectionHeader title1={"FAQS"} title2={"Frequently"} firstp={first} color={{color:"#04A978"}} main={"Asked Questions"}/>
+      <SectionHeader title1={"FAQS"} title2={"Frequently"} firstp={first} color={{ color: "#04A978" }} main={"Asked Questions"} />
+      <SectionHeader title1={"REVIEWS"} title2={"Go Through Reviews Of Previous Students To"} firstp={first} color={{ color: "#EB0010" }} main={" Make An Informed Decision"} /> 
+       <ReviewSlider/>
       </div>
 
     </div>
