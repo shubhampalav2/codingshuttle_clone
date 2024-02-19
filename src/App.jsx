@@ -22,6 +22,7 @@ import Card from './components/Card';
 import Hero from "./components/Hero/Hero.jsx"
 import './App.css';
 import ReviewSlider from './components/ReviewSlider.jsx';
+import Frequently from './components/Frequently.jsx';
 
 function App() {
   const first = {
@@ -136,9 +137,11 @@ function App() {
        ))}
       </div>
       <SectionHeader title1={"OUR CURRICULUM"} title2={"Structured Curriculum Vetted By"} firstp={first} color={{ color: "#006FE6" }} main={"Industry Experts"} />
-      <SectionHeader title1={"FAQS"} title2={"Frequently"} firstp={first} color={{ color: "#04A978" }} main={"Asked Questions"} />
+        <SectionHeader title1={"FAQS"} title2={"Frequently"} firstp={first} color={{ color: "#04A978" }} main={"Asked Questions"} />
+        <Frequently/>
       <SectionHeader title1={"REVIEWS"} title2={"Go Through Reviews Of Previous Students To"} firstp={first} color={{ color: "#EB0010" }} main={" Make An Informed Decision"} /> 
-       <ReviewSlider/>
+      <ReviewSlider />
+        
       </div>
 
     </div>

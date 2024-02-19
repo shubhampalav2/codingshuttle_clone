@@ -59,11 +59,35 @@ const ReviewSlider = () => {
     const settings = {
     infinite: true,
     speed: 1500,
-    slidesToShow:3,
+    slidesToShow: 3,
+    arrows: false,
+    dots:false,
     autoplay: true,
     autoplaySpeed: 1500,
     slidesToScroll: 1,
     swipeToSlide: true,
+    responsive: [
+    {
+        breakpoint: 1200,
+        settings: {
+        slidesToShow:2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+        arrows: false,
+        swipeToSlide: true,
+        }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite:true
+            }
+    }
+        
+    ]
     }
     
   return (

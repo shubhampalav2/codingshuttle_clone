@@ -82,12 +82,27 @@ const Hero = () => {
 
   const settings = {
     infinite: true,
+    dots: false,
+    arrows:false,
     speed: 1500,
     slidesToShow:2,
     autoplay:true,
     autoplaySpeed: 1500,
     slidesToScroll: 1,
     swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint:1200,
+        settings: {
+        slidesToShow:1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+        arrows: false,
+        swipeToSlide: true,
+        }
+      }
+      ]
   };
 
   return (
@@ -120,6 +135,7 @@ const Hero = () => {
           </div>
       <div className="hero-right">
         <Slider {...settings}>
+          
           {heroCards.map((obj,idx) => (
            <div className="hero-card" key={idx}> 
           <div className="hero-card-img">
@@ -130,7 +146,7 @@ const Hero = () => {
           </div>
           <div className="hero-card-content">
             <p className='hero-font'>Pre Coding Shuttle</p>
-            <p>{obj.preCodingShuttle}</p>
+            <p className='para-color font-semibold'>{obj.preCodingShuttle}</p>
             <FaArrowDown size={40} color={"rgb(78,58,203"} />
             <p className='hero-font'>Post Coding Shuttle</p>
             <img src={obj.company} alt={"Company Logo"} className='company-logo'/>

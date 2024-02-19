@@ -1,0 +1,24 @@
+.faqs-cards{
+display:flex;
+flex-wrap:wrap;
+justify-content: space-between;
+row-gap:10px;
+}
+
+.faqCard{
+background-color: #effffb;
+border: 1px solid hsl(162 95% 34%);
+display:flex;
+min-height:34px;
+width:46%;
+justify-content:space-between;
+gap:10px;
+padding:1rem;
+}
+
+.faq-text{
+font-size:1.125rem;
+line-height:1.75rem;
+}
+
+
