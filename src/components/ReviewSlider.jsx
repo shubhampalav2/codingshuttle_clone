@@ -93,8 +93,8 @@ const ReviewSlider = () => {
   return (
       <>
           <Slider {...settings}>
-              {reviews.map((obj) => (
-           <div className="review-card">
+              {reviews.map((obj,idx) => (
+           <div className="review-card" key={idx}>
                       <div className="stars spacing">
                           <FaStar color='#EB0010' size={20}/>
                           <FaStar color='#EB0010' size={20}/>

@@ -23,6 +23,35 @@ import Hero from "./components/Hero/Hero.jsx"
 import './App.css';
 import ReviewSlider from './components/ReviewSlider.jsx';
 import Frequently from './components/Frequently.jsx';
+import Discord from "./components/Discord.jsx";
+import adobe from "./images/Adobe.png";
+import uber from "./images/Uber.png";
+import volkswagen from "./images/volkswagen.webp";
+import accolite from "./images/accolite.webp";
+import nagarro from "./images/nagarro.webp";
+import campgemini from "./images/capgemini.webp";
+import cimpress from "./images/cimpress.png";
+import hashedin from "./images/hashedin.png";
+import deloitte from "./images/deloitte.png";
+import cultFit from "./images/Cult.fit.png";
+import maqSoftware from "./images/maqSoftware.png";
+import cred from "./images/cred.png";
+import flipkart from "./images/flipkart.png";
+import meesho from "./images/meesho.png";
+import samsung from "./images/samsung.png";
+import ibm from "./images/ibm.webp";
+import paytm from "./images/paytm.webp";
+import tcs from "./images/tcs.webp";
+import urban_company from "./images/urban-company.webp";
+import siemens from "./images/siemens.webp";
+import salesforce from "./images/salesforce.webp";
+import juspay from "./images/juspay.webp";
+import expediagroup from "./images/expediagroup.webp";
+import americanExpress from "./images/americanExpress.webp";
+import deutsche_telekom from "./images/deutsche_telekom.webp";
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   const first = {
@@ -30,6 +59,27 @@ function App() {
     fontSize: "1rem",
     color: "#8F2D56",
     fontWeight:"700"
+  }
+
+  const setting = {
+    autoplay: true,
+    infinite: true,
+    speed: 900,
+    slidesToShow: 3,
+    arrows: false,
+    dots: false,
+    autoplaySpeed:900,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 400,
+        setting:{
+          slidesToShow:1,
+          slidesToScroll:1,
+        }
+      }
+    ]
   }
   
   const students = [
@@ -129,7 +179,93 @@ function App() {
     <div className='wrapper'>
       <Header/>
       <div className="main-container">
-        <Hero/>
+        <Hero />
+        {/* Alumini's Placements Results */}
+
+        <div className="results">
+          <h2 className='result-heading'>1000+ Alumni Placed At</h2>
+          <div className="result-container">
+            <img src={amazon} alt={"amazon"} />
+            <img src={adobe} alt={"adobe"} />
+            <img src={oracle} alt={"oracle"} />
+            <img src={uber} alt={"uber"} />
+            <img src={atlassian} alt={"atlassian"} />
+            <img src={microsoft} alt={"microsoft"} />
+            <img src={accenture} alt={"accenture"} />
+            <img src={jio} alt={"jio"} />
+            <img src={volkswagen} alt={"volkswagen"} />
+            <img src={accolite} alt={"accolite"} />
+            <img src={nagarro} alt={"nagarro"} />
+            <img src={campgemini} alt={"campgemini"} />
+            <img src={cimpress} alt={"cimpress"} />
+            <img src={hashedin} alt={"hashedin"} />
+            <img src={deloitte} alt={"deloitte"} />
+            <img src={cultFit} alt={"cultFit"} />
+            <img src={maqSoftware} alt={"maqSoftware"} />
+            <img src={cred} alt={"CRED"} style={{ height: "40px" }} />
+            <img src={flipkart} alt={"flipkart"}/>
+            <img src={meesho} alt={"meesho"} style={{ height: "40px" }} />
+            <img src={samsung} alt={"samsung"} />
+            <img src={ibm} alt={"ibm"} />
+            <img src={tcs} alt={"tcs"} />
+            <img src={paytm} alt={"paytm"} />
+            <img src={urban_company} alt={"urban-company"} />
+            <img src={infoedge} alt={"infoedge"} />
+            <img src={bosch} alt={"bosch"} />
+            <img src={siemens} alt={"siemens"} />
+            <img src={salesforce} alt={"salesforce"} />
+            <img src={juspay} alt={"juspay"} />
+            <img src={americanExpress} alt={"americanExpress"} />
+            <img src={expediagroup} alt={"expediagroup"} />
+            
+          </div>
+          
+          <div className="result-slider">
+            <Slider {...setting} className="result-items">
+            <div><img src={amazon} alt={"amazon"} /></div>
+              <div><img src={adobe} alt={"adobe"} /></div>
+              <div>  <img src={oracle} alt={"oracle"} /></div>
+              <div><img src={uber} alt={"uber"} /></div>
+              <div>   <img src={atlassian} alt={"atlassian"} /></div>
+              <div>  <img src={microsoft} alt={"microsoft"} /></div>
+              <div> <img src={accenture} alt={"accenture"} /></div>
+              <div>    <img src={jio} alt={"jio"} /></div>
+              <div><img src={cred} alt={"CRED"} style={{ height: "40px" }} /></div>
+              <div>   <img src={maqSoftware} alt={"maqSoftware"} /></div>
+              <div><img src={flipkart} alt={"flipkart"}/></div>
+
+            </Slider> 
+
+            <Slider {...setting} className="result-items">
+            <img src={volkswagen} alt={"volkswagen"} />
+            <img src={accolite} alt={"accolite"} />
+            <img src={nagarro} alt={"nagarro"} />
+            <img src={campgemini} alt={"campgemini"} />
+            <img src={cimpress} alt={"cimpress"} />
+            <img src={hashedin} alt={"hashedin"} />
+            <img src={deloitte} alt={"deloitte"} />
+            <img src={cultFit} alt={"cultFit"} />
+            <img src={meesho} alt={"meesho"} style={{ height: "40px" }} />
+            <img src={samsung} alt={"samsung"} />
+            <img src={ibm} alt={"ibm"} />
+            </Slider>
+
+            <Slider {...setting} className="result-items">
+            <img src={tcs} alt={"tcs"} />
+            <img src={paytm} alt={"paytm"} />
+            <img src={urban_company} alt={"urban-company"} />
+            <img src={infoedge} alt={"infoedge"} />
+            <img src={bosch} alt={"bosch"} />
+            <img src={siemens} alt={"siemens"} />
+            <img src={salesforce} alt={"salesforce"} />
+            <img src={juspay} alt={"juspay"} />
+            <img src={americanExpress} alt={"americanExpress"} />
+            <img src={expediagroup} alt={"expediagroup"} />
+            <img src={deutsche_telekom} alt={"deutsche_telekom"} />
+            </Slider>
+          </div>
+        </div>
+
         <SectionHeader title1={"SUCCESS STORIES"} title2={"Transform Your Life With"} firstp={first} color={{color: "#8F2D56"}} main={"Coding Shuttle"}/>
       <div className="cards">
         {students.map((student,idx) => (
@@ -138,7 +274,8 @@ function App() {
       </div>
       <SectionHeader title1={"OUR CURRICULUM"} title2={"Structured Curriculum Vetted By"} firstp={first} color={{ color: "#006FE6" }} main={"Industry Experts"} />
         <SectionHeader title1={"FAQS"} title2={"Frequently"} firstp={first} color={{ color: "#04A978" }} main={"Asked Questions"} />
-        <Frequently/>
+        <Frequently />
+        <Discord/>
       <SectionHeader title1={"REVIEWS"} title2={"Go Through Reviews Of Previous Students To"} firstp={first} color={{ color: "#EB0010" }} main={" Make An Informed Decision"} /> 
       <ReviewSlider />
         
