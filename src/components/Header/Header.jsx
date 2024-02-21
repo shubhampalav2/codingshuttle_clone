@@ -7,10 +7,10 @@ const Header = () => {
       <div className='header'>
       <nav className='top-navbar'>
         <div className="nav-left">
-                  <a href="#"><img src={logo}></img></a>
-                  <a href="" className='nav-links hide'>Testimonials</a>
-                  <a href="#" className='nav-links hide'>Curriculum</a>
-                  <a href="#" className='nav-links hide'>FAQs</a>
+                  <a href="/"><img src={logo} alt={"website-logo"}></img></a>
+                  <a href="#reviews" className='nav-links hide'>Testimonials</a>
+                  <a href="#reviews" className='nav-links hide'>Curriculum</a>
+                  <a href="#frequently" className='nav-links hide'>FAQs</a>
               </div>      
               <div className="nav-right">
           <img src={googleLogo} className='sign-google' alt="googleLogo" />

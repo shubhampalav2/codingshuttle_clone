@@ -52,6 +52,7 @@ import deutsche_telekom from "./images/deutsche_telekom.webp";
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
   const first = {
@@ -276,11 +277,10 @@ function App() {
         <SectionHeader title1={"FAQS"} title2={"Frequently"} firstp={first} color={{ color: "#04A978" }} main={"Asked Questions"} />
         <Frequently />
         <Discord/>
-      <SectionHeader title1={"REVIEWS"} title2={"Go Through Reviews Of Previous Students To"} firstp={first} color={{ color: "#EB0010" }} main={" Make An Informed Decision"} /> 
-      <ReviewSlider />
-        
+      <SectionHeader title1={"REVIEWS"} title2={"Go Through Reviews Of Previous Students To"} firstp={first} color={{ color: "#EB0010" }} main={" Make An Informed Decision"}/> 
+      <ReviewSlider /> 
       </div>
-
+      <Footer/> 
     </div>
   );
 }

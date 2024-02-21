@@ -61,7 +61,7 @@ const Frequently = () => {
         }
     ]
   return (
-      <div className='faqs-cards'>
+      <div className='faqs-cards' id="frequently">
           {arr.map((obj,idx) => (
               <FaqCard obj={obj} idx={idx} key={idx}/>
         ))}

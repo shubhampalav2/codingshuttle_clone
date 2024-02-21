@@ -91,7 +91,7 @@ const ReviewSlider = () => {
     }
     
   return (
-      <>
+      <div id="reviews">
           <Slider {...settings}>
               {reviews.map((obj,idx) => (
            <div className="review-card" key={idx}>
@@ -116,7 +116,7 @@ const ReviewSlider = () => {
           </div>
           ))}   
           </Slider>
-      </>
+      </div>
   )
 }
 
