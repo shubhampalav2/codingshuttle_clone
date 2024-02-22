@@ -273,7 +273,7 @@ function App() {
           <Card key={idx} student={student} />
        ))}
       </div>
-      <SectionHeader title1={"OUR CURRICULUM"} title2={"Structured Curriculum Vetted By"} firstp={first} color={{ color: "#006FE6" }} main={"Industry Experts"} />
+      {/* <SectionHeader title1={"OUR CURRICULUM"} title2={"Structured Curriculum Vetted By"} firstp={first} color={{ color: "#006FE6" }} main={"Industry Experts"} /> */}
         <SectionHeader title1={"FAQS"} title2={"Frequently"} firstp={first} color={{ color: "#04A978" }} main={"Asked Questions"} />
         <Frequently />
         <Discord/>
