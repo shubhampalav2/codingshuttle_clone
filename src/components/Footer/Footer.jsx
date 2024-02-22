@@ -27,19 +27,19 @@ const Footer = () => {
           <h2>FOLLOW US ON</h2>
           <div className="social-icons">
             <div id="item1">
-             <CiYoutube size={30} id="youtube"/>
+           <a href="https://www.youtube.com/@codingshuttle" target="_blank" rel="noreferrer" className='link'><CiYoutube size={30} id="youtube" className='icons'/></a>
             </div>
             
-            <div >
-              <FaLinkedinIn size={30} id="linkedin"/>
+            <div className='item2'>
+              <a href="https://www.linkedin.com/company/coding-shuttle/"  target="_blank" rel="noreferrer" className='link'><FaLinkedinIn size={30} id="linkedin" className='icons'/></a> 
             </div>
             
-            <div>
-              <FaInstagram size={30} id="insta"/>
+            <div className='item3'>
+              <a href="https://www.instagram.com/codingshuttle/" target="_blank" rel="noreferrer" className='link'><FaInstagram size={30} id="insta" className='icons'/></a>
             </div>
 
-            <div>
-              <FaTelegramPlane size={30} id="telegram"/>
+            <div className='item4'>
+             <a href="https://telegram.me/realanujbhaiya" target="_blank" rel="noreferrer" className='link'><FaTelegramPlane size={30} id="telegram" className='icons'/></a> 
             </div>
           </div>
               </div>
